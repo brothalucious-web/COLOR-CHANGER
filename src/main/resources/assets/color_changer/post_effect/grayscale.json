@@ -4,7 +4,7 @@
   },
   "passes": [
     {
-      "program": "color_changer:post/grayscale",
+      "program": "color_changer:grayscale",
       "inputs": [
         {
           "sampler_name": "In",
