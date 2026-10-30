@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "color_changer",
+  "version": "${version}",
+  "name": "Color Changer",
+  "description": "A grayscale-to-color world challenge with randomized color groups and a restoration threshold.",
+  "environment": "client",
+  "entrypoints": { "client": ["web.brothalucious.colorchanger.ColorChangerClient"] },
+  "depends": { "fabricloader": ">=0.16.9", "minecraft": "~1.21.2", "java": ">=21", "fabric-api": "*" }
+}
