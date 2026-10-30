@@ -7,8 +7,9 @@
       "program": "color_changer:post/grayscale",
       "inputs": [
         {
-          "sampler_name": "InSampler",
-          "target": "minecraft:main"
+          "sampler_name": "In",
+          "target": "minecraft:main",
+          "bilinear": true
         }
       ],
       "output": "swap"
@@ -18,7 +19,8 @@
       "inputs": [
         {
           "sampler_name": "In",
-          "target": "swap"
+          "target": "swap",
+          "bilinear": true
         }
       ],
       "output": "minecraft:main"
