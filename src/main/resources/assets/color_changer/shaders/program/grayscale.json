@@ -1,0 +1,8 @@
+{
+  "vertex": "minecraft:post/blit",
+  "fragment": "color_changer:post/grayscale",
+  "samplers": [
+    { "name": "In" }
+  ],
+  "uniforms": []
+}
