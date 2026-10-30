@@ -2,7 +2,6 @@ package web.brothalucious.colorchanger;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.math.MathHelper;
 import java.util.Random;
 
 /** Deterministic challenge state; each hue family is decided once per cycle. */
@@ -40,7 +39,8 @@ public final class ColorProgression {
             deathTriggered = true;
             PlayerEntity player = client.player;
             if (player != null && !player.isCreative() && !player.isSpectator()) {
-                player.kill();
+                // setHealth is available on the client entity API in 1.21.2.
+                player.setHealth(0.0F);
             }
         }
     }
